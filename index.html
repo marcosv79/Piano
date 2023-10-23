@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/5ae4c0c52b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TP01</title>
+</head>
+<body>
+    <div class="container">
+  <div class="top">
+    <audio id="player"></audio>
+    <input type="file" id="file-input">
+  </div>
+  <div class="footer">
+    <button id="play-btn">
+      
+    </button>
+    <button id="pause-btn">
+      <i class="fa-solid fa-pause"></i>
+    </button>
+    <button id="stop-btn">
+      <i class="fa-solid fa-stop"></i>
+    </button>
+    <span id="musicTime"></span>
+  </div>
+  <div class="right"></div>
+  <div class="lat"></div>
+  <div class="pcp">
+    <div class="equ">
+        <div id="cont">
+          <canvas id="canvas1"></canvas>
+        </div>
+      </div>      
+    <div class="left">
+    </div>
+    <div class="music-wave">
+        <canvas id="canvas2"></canvas>
+    </div>
+    <div class="middle">
+      <h1 class="paragrafo">defesa prog web</h1>
+    </div>
+    <div class="pm">
+      <div class="bottom"></div>
+      <div class="piano">
+        <button data-note="C" class="key white" onclick="document.getElementById('C').play()"></button>
+        <button data-note="Db" class="key black" onclick="document.getElementById('Db').play()"></button>
+        <button data-note="D" class="key white" onclick="document.getElementById('D').play()"></button>
+        <button data-note="E" class="key black" onclick="document.getElementById('E').play()"></button>
+        <button data-note="Eb" class="key white" onclick="document.getElementById('Eb').play()"></button>
+        <button data-note="F" class="key white" onclick="document.getElementById('F').play()"></button>
+        <button data-note="Gb" class="key black" onclick="document.getElementById('Gb').play()"></button>
+        <button data-note="G" class="key white" onclick="document.getElementById('G').play()"></button>
+        <button data-note="Ab" class="key black" onclick="document.getElementById('Ab').play()"></button>
+        <button data-note="A" class="key white" onclick="document.getElementById('A').play()"></button>
+        <button data-note="Bb" class="key black" onclick="document.getElementById('Bb').play()"></button>
+        <button data-note="B" class="key white" onclick="document.getElementById('B').play()"></button>
+        <button data-note="Db" class="key black" onclick="document.getElementById('Db').play()"></button>
+        <button data-note="D" class="key white" onclick="document.getElementById('D').play()"></button>
+        <button data-note="B" class="key white" onclick="document.getElementById('B').play()"></button>
+        <button data-note="Db" class="key black" onclick="document.getElementById('Db').play()"></button>
+        <button data-note="B" class="key white" onclick="document.getElementById('B').play()"></button>
+        <button data-note="E" class="key black" onclick="document.getElementById('E').play()"></button>
+        <button data-note="G" class="key white" onclick="document.getElementById('G').play()"></button>
+        <button data-note="Db" class="key black" onclick="document.getElementById('Db').play()"></button>
+        <button data-note="F" class="key white" onclick="document.getElementById('F').play()"></button>
+        <audio id="C" src="./notas/notes_C.mp3"></audio>
+        <audio id="Db" src="./notas/notes_Db.mp3"></audio>
+        <audio id="D" src="./notas/notes_D.mp3"></audio>
+        <audio id="E" src="./notas/notes_E.mp3"></audio>
+        <audio id="Eb" src="./notas/notes_Eb.mp3"></audio>
+        <audio id="F" src="./notas/notes_F.mp3"></audio>
+        <audio id="Gb" src="./notas/notes_Gb.mp3"></audio>
+        <audio id="G" src="./notas/notes_G.mp3"></audio>
+        <audio id="Ab" src="./notas/notes_Ab.mp3"></audio>
+        <audio id="A" src="./notas/notes_A.mp3"></audio>
+        <audio id="Bb" src="./notas/notes_Bb.mp3"></audio>
+        <audio id="B" src="./notas/notes_B.mp3"></audio>
+      </div>
+      <div class="main">
+        <div class="area_caixas">
+          <div class="caixa1"></div> 
+          <div class="caixa3"></div>
+          <div class="caixa_meio">
+            <div class="caixa2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>

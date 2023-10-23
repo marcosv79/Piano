@@ -1,0 +1,184 @@
+.container {  display: grid;
+    grid-template-columns: 0.2fr 2.3fr 0.5fr;
+    grid-template-rows: 0.1fr 2.8fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "top top top"
+      "lat pcp right"
+      "footer footer footer";
+  }
+  
+  .top {
+    grid-area: top; 
+    background-color: darkred;
+    border: 3px solid black;
+    height: auto;
+  }
+  
+  .footer { 
+    grid-area: footer;
+    background-color: darkred;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .right { grid-area: right;
+    background-color: darkred;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+ }
+  
+ .lat { 
+    grid-area: lat;
+    background-color: darkred;
+    min-height: 88vh;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+ }
+  
+  .pcp {  display: grid;
+    grid-template-columns: 0.5fr 0.4fr 2.1fr;
+    grid-template-rows: 1.5fr 0.1fr 1.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "equ left music-wave"
+      "equ middle middle"
+      "equ pm pm";
+    grid-area: pcp;
+  }
+  
+  .equ { grid-area: equ; 
+background-color: black;}
+  
+  .left { grid-area: left;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    background-color: darkred;
+}
+  
+  .music-wave { grid-area: music-wave; 
+background-color: black;
+width: auto;
+height: auto;
+display: flex;
+}
+  
+  .middle { 
+    grid-area: middle;
+    background-color: blue;
+    border-top: 3px solid black;
+}  
+  .pm {  display: grid;
+    grid-template-columns: 0.4fr 1.6fr 1fr;
+    grid-template-rows: 1fr 1.7fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "piano main main"
+      "piano main main"
+      "bottom bottom bottom";
+    grid-area: pm;
+  }
+  
+  .bottom { grid-area: bottom; 
+background-color: darkred;}
+  
+  .piano {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    grid-area: piano;
+    display: flex;
+    flex-direction: column;
+}  
+  .main { 
+background-color: darkred;
+border-top: 3px solid black;
+    border-right: 3px solid black;
+border-bottom: 3px solid black;
+display: grid; 
+  grid-template-columns: 0.3fr 2.4fr 0.3fr; 
+  grid-template-rows: 0.7fr 1.6fr 0.7fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". area_caixas ."
+    ". . ."; 
+  grid-area: main; }
+
+  .area_caixas {
+    display: grid; 
+    grid-template-columns: 0.7fr 1.6fr 0.7fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      "caixa1 caixa_meio caixa3"
+      ". . ."; 
+    grid-area: area_caixas; 
+  }
+  .caixa1 { grid-area: caixa1; background-color: aqua;}
+  .caixa3 { grid-area: caixa3; background-color: coral;}
+  .caixa_meio {
+    display: grid; 
+    grid-template-columns: 0.9fr 1.2fr 0.9fr; 
+    grid-template-rows: 1.3fr 0.8fr 0.9fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". caixa2 ."
+      ". caixa2 ."
+      ". caixa2 ."; 
+    grid-area: caixa_meio; 
+  }
+  .caixa2 { grid-area: caixa2; background-color: darkkhaki; }
+  
+  .white{
+    width: auto;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .white:active{
+    background-color:lightgrey;
+  }
+  
+  .black{
+      width: 80px;
+      height: 15px;
+      background-color: black;
+      margin-top: -8px;
+      z-index: 2;
+  }
+
+  #file-input{
+    background-color: orange;
+  width: 120px;
+  height: 50px;
+  color: white;
+  }
+
+  #play-btn, #pause-btn, #stop-btn {
+    color: white;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    margin: 0 10px;
+    background-color: orange;
+  }
+
+  #play-btn:hover, #pause-btn:hover, #stop-btn:hover {
+    background-color:darkorange;
+  }
+
+  #musicTime{
+    font-size: 20px;
+    color: white;
+  }
+
+  .paragrafo{
+    text-align: center;
+  }
